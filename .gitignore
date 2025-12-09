@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Data and Models
+data/raw/          # Raw datasets
+data/processed/    # Processed data
+models/            # Trained models
+*.pkl
+*.joblib
+*.h5
+
+# Notebooks output
+.ipynb_checkpoints
+
+# Logs
+logs/
+
