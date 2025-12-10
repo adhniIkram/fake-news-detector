@@ -11,13 +11,6 @@
         "CONDA_DEFAULT_ENV": "proj0",
         "PATH": "/home/adhni/miniconda3/envs/proj0/bin:${env:PATH}"
     },
-    // Jupyter kernel settings
-    "jupyter.kernels.filter": [
-        {
-            "type": "pythonEnvironment",
-            "path": "/home/adhni/miniconda3/envs/proj0"
-        }
-    ],
     // Code quality and formatting
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
@@ -30,7 +23,7 @@
     "editor.formatOnSave": true,
     // Python-specific settings
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "ms-python.python",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit"
@@ -47,5 +40,8 @@
         "**/*.pyc": true,
         ".git": true,
         "*.pyc": true
-    }
+    },
+    "jupyter.kernels.excludePythonEnvironments": [
+        "/home/adhni/miniconda3/envs/proj0"
+    ]
 }
